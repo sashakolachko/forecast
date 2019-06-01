@@ -1,12 +1,15 @@
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
+  /* background-color: #2b81ac; */
   font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
 }
 
 .container {
-  height: 100%;
   border: 20px solid #2b81ac;
+  height:  100%;
+  box-sizing: border-box;
   background-color: #3399cc;
   text-align: center;
 }
@@ -25,9 +28,6 @@ html, body {
   display: inline-block;
 }
 
-/* .box:hover li:not(:hover){
-  opacity: 0.5;
-} */
 ul:hover li {
   opacity: 0.5;
   outline: 3px white;
@@ -56,14 +56,15 @@ ul:hover li:hover {
 .box {
   font-size: 0;
   padding: 0;
+  border: 2px solid white;
 }
 
 .box li {
   height: 100px;
   font-size: 25px;
   display: inline-block;
-  outline: 3px white;
-  outline-style: solid;
+  box-sizing:border-box;
+  border: 2px solid white;
   border-collapse: collapse;
   color: white;
 }
