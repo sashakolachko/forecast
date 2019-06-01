@@ -1,105 +1,135 @@
-
-html,body {
-    height: 100%;
-    margin: 0;
-    font-family:  “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
 }
 
-.container{
+.container {
   height: 100%;
   border: 20px solid #2b81ac;
   background-color: #3399cc;
+  text-align: center;
 }
+
+.container .top-p,
+.container .bottom-p {
+  text-align: left;
+}
+
 .forecast,
 .top-p,
-.bottom-p{
+.bottom-p {
   max-width: 700px;
   width: 100%;
   margin: 20px auto;
-  display: flex;
+  display: inline-block;
 }
-.top-p{
-  margin-top:50px;
+
+/* .box:hover li:not(:hover){
+  opacity: 0.5;
+} */
+ul:hover li {
+  opacity: 0.5;
+  outline: 3px white;
+  outline-style: solid;
 }
+
+ul:hover li:hover {
+  opacity: 1;
+}
+
+.top-p {
+  margin-top: 50px;
+}
+
 .top-p p,
-.bottom-p p{
-  margin:0;
-  color:white;
+.bottom-p p {
+  margin: 0;
+  color: white;
   font-size: 30px;
 }
-.bottom-p p{
+
+.bottom-p p {
   font-size: 20px;
 }
-.forecast:hover{
-  opacity: 0.5;
-}
-.box{
+
+.box {
   font-size: 0;
   padding: 0;
 }
-.box li{
+
+.box li {
   height: 100px;
   font-size: 25px;
   display: inline-block;
-  outline: 2px white;
+  outline: 3px white;
   outline-style: solid;
   border-collapse: collapse;
-  color:white;
+  color: white;
 }
-li span{
-  display:block;
+
+li span {
+  display: block;
   text-align: center;
-  padding:10px;
+  padding: 10px;
 }
-li span:last-child{
+
+li span:last-child {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.65);
 }
- .lisbon{
+
+.lisbon {
   background-color: ;
   width: 50%;
 }
-.forecast .lisbon:hover{
-  opacity: 1;
-}
- .paris{
+
+.paris {
   background-color: #3cc;
   width: 25%;
 }
-.belgrad{
+
+.belgrad {
   background-color: #969;
   width: 25%;
 }
 
-.moscow{
+.moscow {
   background-color: #c24747;
   width: 25%;
 }
-.telaviv{
+
+.telaviv {
   background-color: #e2674a;
   width: 25%;
 }
-.cair{
+
+.cair {
   background-color: #ffcc66;
   width: 25%;
 }
-.newyork{
+
+.newyork {
   background-color: #9c9;
   width: 25%;
 }
-.newdelhi{
+
+.newdelhi {
   background-color: #699;
   width: 25%;
 }
-.sanfrancisco{
+
+.sanfrancisco {
   background-color: #c69;
   width: 50%;
 }
-.tokyo{
+
+.tokyo {
   background-color: #396;
   width: 25%;
 }
-.sydney{
+
+.sydney {
   background-color: #669;
   width: 100%;
 }
