@@ -2,7 +2,6 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  /* background-color: #2b81ac; */
   font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
 }
 
@@ -65,7 +64,6 @@ ul:hover li:hover {
   display: inline-block;
   box-sizing:border-box;
   border: 2px solid white;
-  border-collapse: collapse;
   color: white;
 }
 
